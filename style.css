@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.box {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box::before {
+    content: '';
+    background-image: url("images/Train-Rail2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    z-index: -1;
+
+
+}
+
+.box h1:nth-child(1) {
+    color: rgb(59, 99, 117);
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.box h1:nth-child(2) {
+    font-size: 80px;
+    color: cadetblue;
+    margin: 40px 0;
+}
+
+.box .his {
+    color: cadetblue;
+}
+
+.box .buttons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box button {
+    width: 40%;
+    height: 50px;
+    background-color: rgb(184, 46, 46);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    /* opacity: .8; */
+
+}
+
+.box button:active {
+    transform: scale(1.05, 1.05);
+    transition: .5s;
+}
+
+
+.box .save {
+    background-color: cadetblue;
+    width: 30%;
+    margin: 20px 0;
+    font-size: 30px;
+
+}
+
+.box h3 {
+    background-color: white;
+    width: 40%;
+    height: 40px;
+    font-size: 30px;
+    padding: auto;
+}
