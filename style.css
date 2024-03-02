@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('images/m1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+
+
+
+}
+
+
+.container {
+    width: 390px;
+    height: 80%;
+    background-color: #0a0906;
+    opacity: .6;
+    border-radius: 16px 133px;
+    box-shadow: 0 0 35px white;
+    border: 2px solid white;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+
+.container .game_name {
+    height: 17%;
+    font-family: "Courgette", cursive;
+    font-weight: 100;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin-top: 8px;
+}
+
+
+.container .gameSpace {
+    width: 100%;
+    height: 79%;
+
+    font-size: 40px;
+    color: #ffe5b3;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.container .gameSpace p{
+    padding:0 10px ;
+}
+
+
+.container .gameSpace .buttons {
+    width: 100%;
+    height: 28%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.container .gameSpace .buttons button {
+    width: 45%;
+    margin-bottom: 11px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    transition: .2s linear;
+}
+
+.container .gameSpace .buttons button:nth-child(1) {
+    border-bottom-right-radius: 10px;
+}
+
+.container .gameSpace .buttons button:nth-child(2) {
+    border-bottom-left-radius: 133px;
+    width: 47%;
+    margin-left: 14px;
+    padding-right: 5px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.container .gameSpace .buttons button:active {
+    transform: scale(.95);
+}
