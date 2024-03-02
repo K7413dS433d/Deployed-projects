@@ -43,6 +43,7 @@ body::after {
     box-shadow: 0 0 35px white;
     border: 2px solid white;
     color: white;
+    margin: 0px 10px;
 
     display: flex;
     justify-content: space-between;
